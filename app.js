@@ -12,7 +12,7 @@ const engine = new Liquid({
 
 engine.renderFile("index.liquid",{projects: projectsData})
 .then((renderedOutput) => {
-    fs.writeFileSync("output.html",renderedOutput, "utf-8"); 
+    fs.writeFileSync("index.html",renderedOutput, "utf-8"); 
 }).catch((error) => {
     console.error("Error rendering template", error)
 });
