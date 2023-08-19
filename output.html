@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content= "Sinan Koyuncu's Algofy Project">
+    <meta name ="author" content="Sinan Koyuncu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/sections.css">
+    <link rel="icon" type="image/x-icon" href="./public/favicon-32x32.png">
+    <script src="/functionality.js" defer></script>
+    <title>SKoyuncu Algofy Task</title>
+</head>
+<body>
+    <header>
+        <nav id="mobile-navbar">
+            <a id="home-logo"><img src="./public/logo1.png" class="logo" alt="Website logo"></a>
+            <img src="./public/burger-menu.svg" id="burger-menu" alt="Navbar menu icon" class="mobile-nav-icons">
+            <img src="./public/close.svg" id="close-icon" alt="Navbar close icon" class="mobile-nav-icons">
+        </nav>
+        <div class="sidebar">
+            <a href="/" id="home">Home</a>
+            <a id="about-tag">About</a>
+            <a id="projects">Projects</a>
+            <a id="contact-tag">Contact</a>
+        </div>
+        <nav id="desktop-nav">
+            <a id="home-logo-desktop"><img src="./public/logo1.png" class="logo" alt="Website logo"></a>
+            <div>
+                <a id="home-desktop">Home</a>
+                <a id="about-desktop-tag">About</a>
+                <a id= "projects-desktop">Projects</a>
+                <a id="contact-desktop-tag">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="hero-section">
+            <div>
+                <h1>Unleashing Web Magic</h1>
+                <h2>I create enchanting online experiences and elevate your online presence.</h2>
+            </div>
+        </section>
+        <section id="about" class="sections">
+            <h2>About me</h2>
+            <div class="about-container">
+                <img src="./public/profile-laci.png" id="profile-image" alt="Profile picture">
+                <p id="paragraph">Welcome to my website! My name is Sinan Koyuncu, and I am a passionate <b>full stack web developer.</b> With a solid foundation as a web content editor for five years, 
+                    I have seamlessly transitioned into the world of programming, 
+                    honing my skills and expertise through self-learning and 
+                    <b>hands-on experience.</b>
+                    <span id="about-span"> Throughout my journey as a web developer, I developed a deep understanding of the 
+                    importance of <b>user experience and captivating content</b>. I learned how to create engaging web pages, <b>optimize 
+                    content for search engines</b>, and ensure a seamless browsing experience for users. <br><br>I have strong foundation in HTML, CSS, and 
+                    JavaScript. My proficiency extends to building dynamic user interfaces with <b>React and Next.js</b>, while also harnessing the power 
+                    of Node.js and Express.js for robust backend development. With an eye for design, I craft responsive and visually a
+                    ppealing layouts using tools like TailwindCSS and Material UI. My database expertise covers MongoDB and MySQL, 
+                    leveraging MongoDB Atlas for scalable solutions. I'm well-versed in deploying applications on <b>AWS S3</b> and optimizing 
+                    media with Cloudinary. Proficient in version control through <b>GIT and GitHub</b>, I ensure seamless collaboration. 
+
+                    <br><br>One of my key strengths lies in my ability to bridge the gap between design and development. 
+                    Having previously worked as a web content editor, I possess a unique perspective that enables me 
+                    to understand and <b>effectively collaborate with designers, content creators, and other stakeholders</b>. 
+                    I thrive in collaborative environments, and I am always eager to contribute my technical expertise while 
+                    actively seeking opportunities for growth and learning.</span> <span id="about-more">SHOW MORE</span>
+                </p>
+            </div>
+        </section>
+        <section class="sections" id="projects-section-mobile">
+            <h2 id="">Projects</h2>
+            <div class="slider-container">
+                <ul id="projects-container" class="slider">
+                    
+                    <li class="projects-single">
+                        
+                        <h3>Portfolio</h3>
+                        <div id="projects-image-container">
+                            <img src="https://i.hizliresim.com/11lzfz2.png" alt="Portfolio Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">This is my portfolio website where you can see all the information about me and the projects I did. I built this website using foremost technologie...</p>
+                            <p class="full-text">This is my portfolio website where you can see all the information about me and the projects I did. I built this website using foremost technologies such as React, Next.js, TailwindCSS and more.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://sinankoyuncu.dev/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/porfolio" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    
+                    <li class="projects-single">
+                        
+                        <h3>Gadget Box</h3>
+                        <div id="projects-image-container">
+                            <img src="https://i.hizliresim.com/dqcskhh.png" alt="Gadget Box Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">Welcome to Gadget Box, a dynamic and immersive <b>gaming-themed web app</b> designed to bring gamers together and foster a vibrant community of gam...</p>
+                            <p class="full-text">Welcome to Gadget Box, a dynamic and immersive <b>gaming-themed web app</b> designed to bring gamers together and foster a vibrant community of game enthusiasts. With a focus on sharing game reviews, ratings, and connecting with like-minded individuals, Gadget Box offers an engaging platform for gamers to express their opinions, discover new games, and connect with fellow players. <br><br>My web app utilizes the powerful rawg.io <b>API</b>, ensuring that users have access to an extensive collection of games, including the latest releases, popular titles, and hidden gems. With the integrated search bar, you can easily find your favorite games or explore new ones that pique your interest. <br><br> The heart of Gadget Box lies in the user-generated reviews and ratings. By sharing your experiences and thoughts, you can help fellow gamers discover new adventures or steer clear of potential disappointments. <br><br>In addition to the review and rating system, Gadget Box offers a comprehensive social platform. Each user has their own <b>profile page</b>, allowing you to personalize your gaming identity, showcase your favorite games, and connect with other users who share similar gaming interests. You can follow other gamers, explore their profiles, and stay updated with their latest gaming experiences. <br><br> Our website is built with a <b>responsive and mobile-first design</b>, ensuring that you can access Gadget Box seamlessly across various devices. Whether you're on your desktop computer, tablet, or smartphone, you can enjoy a consistent and optimized user experience. <br><br> To enhance the security and user experience, Gadget Box employs <b>NextAuth</b> for authentication, utilizing session storage to ensure a seamless and reliable login process.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://gadget-box.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/gadget-box" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    
+                    <li class="projects-single">
+                        
+                        <h3>Quickplate</h3>
+                        <div id="projects-image-container">
+                            <img src="https://i.hizliresim.com/ajslk4n.png" alt="Quickplate Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">Welcome to Quickplate, a vibrant <b>social platform</b> dedicated to sharing quick and easy-to-make recipes. Quickplate provides a space for food e...</p>
+                            <p class="full-text">Welcome to Quickplate, a vibrant <b>social platform</b> dedicated to sharing quick and easy-to-make recipes. Quickplate provides a space for food enthusiasts to discover, create, and share delicious recipes that can be made in no time. The platform emphasizes simplicity, convenience, and the joy of cooking, offering a community-driven hub for culinary inspiration.<br><br>With an intuitive and <b>user-friendly</b> interface, you can easily register and log in to Quickplate, unlocking a world of culinary inspiration. Once you're part of the Quickplate family, you can create your own recipes, upload mouthwatering images, and share your cooking triumphs with others.<br><br>To ensure seamless user experience and efficient image storage, Quickplate integrates with <b>AWS S3 server</b>, allowing you to upload and display enticing visuals alongside your recipes.<br><br>It's also a community of food enthusiasts. <b>Users can engage with recipes through comments</b>, providing feedback, suggestions, and personal anecdotes. You can <b>bookmark</b> your favorite recipes, creating a personalized collection of go-to dishes for future reference. In addition, users can upvote recipes they love, showcasing popular and highly-rated dishes within the community.<br><br>Each recipe and user has its own dedicated page, providing a personalized showcase for your culinary adventures. Quickplate also offers a display of your own recipes and bookmarked favorites, making it easy to revisit and recreate your culinary successes.<br><br>Quickplate boasts a responsive and <b>mobile-first design</b>, ensuring a seamless browsing experience across devices. Our authentication system leverages local storage, providing a secure and hassle-free login experience.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://quickplate.onrender.com/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/recipe-project" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    
+                    <li class="projects-single">
+                        
+                        <h3>My Unsplash</h3>
+                        <div id="projects-image-container">
+                            <img src="https://i.hizliresim.com/p3it3bd.png" alt="My Unsplash Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">Welcome to My Unsplash, a user-friendly web application inspired by the renowned Unsplash platform. My Unsplash provides individuals with a simple ...</p>
+                            <p class="full-text">Welcome to My Unsplash, a user-friendly web application inspired by the renowned Unsplash platform. My Unsplash provides individuals with a simple and intuitive space to showcase <b>their photography skills</b> and share stunning images with the world.<br><br>My Unsplash offers a seamless user experience with pure CSS, allowing users to easily create an account, log in, and <b>upload their own photos and images. </b> By leveraging <b>AWS S3</b> for storage, My Unsplash ensures secure and efficient handling of media files. Users can also browse and download images uploaded by others, fostering a community of photography enthusiasts.<br><br>The design of My Unsplash follows a <b>masonry</b> layout, allowing for a visually appealing and organized presentation of images. The <b>responsive and mobile-first</b> approach ensures that the website adapts flawlessly across various devices, providing an immersive experience for both desktop and mobile users.<br><br>At its core, My Unsplash prioritizes simplicity and convenience. By providing an easy-to-use interface, users can focus on showcasing their artistic talents and expressing their unique perspectives through stunning visual content.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://myunsplash-slcn.onrender.com/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/unsplash-demo" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    
+                    <li class="projects-single">
+                        
+                        <h3>Interactive Credit Card</h3>
+                        <div id="projects-image-container">
+                            <img src="https://i.hizliresim.com/bkaakfi.png" alt="Interactive Credit Card Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">Card design that reflects the entered credit card information interactively on the screen. *Developed specifically for 375px and 1080px for a chall...</p>
+                            <p class="full-text">Card design that reflects the entered credit card information interactively on the screen. *Developed specifically for 375px and 1080px for a challenge.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://interactive-credit-card-delta.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/interactive-credit-card" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    
+                    <li class="projects-single">
+                        
+                        <h3>News Website Landing Page</h3>
+                        <div id="projects-image-container">
+                            <img src="https://i.hizliresim.com/kfn6s18.png" alt="News Website Landing Page Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">An example of a homepage that a technology news website could use.</p>
+                            <p class="full-text">An example of a homepage that a technology news website could use.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://news-landing-page-virid.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/news-landing-page" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    
+                    <li class="projects-single">
+                        
+                        <h3>Billing Page</h3>
+                        <div id="projects-image-container">
+                            <img src="https://i.hizliresim.com/6b5q5fn.png" alt="Billing Page Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">A billing page that shows your billing history, payments and card details in a modern way. *Develeped specifically for 1080px for a challenge.</p>
+                            <p class="full-text">A billing page that shows your billing history, payments and card details in a modern way. *Develeped specifically for 1080px for a challenge.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://billing-page-nine.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/billing-page" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    
+                </ul>               
+            </div>
+        </section>
+
+        <section class="sections" id="projects-section-desktop">
+            <h2>Projects</h2>
+            <div class="desktop-container">
+                <ul id="projects-container-desktop" class="projects-container">
+                    
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="https://i.hizliresim.com/11lzfz2.png" alt="Portfolio Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>Portfolio</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">This is my portfolio website where you can see all the information about me and the projects I did. I built this website using foremost technologie...</p>
+                            <p class="full-text">This is my portfolio website where you can see all the information about me and the projects I did. I built this website using foremost technologies such as React, Next.js, TailwindCSS and more.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://sinankoyuncu.dev/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/porfolio" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="https://i.hizliresim.com/dqcskhh.png" alt="Gadget Box Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>Gadget Box</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">Welcome to Gadget Box, a dynamic and immersive <b>gaming-themed web app</b> designed to bring gamers together and foster a vibrant community of gam...</p>
+                            <p class="full-text">Welcome to Gadget Box, a dynamic and immersive <b>gaming-themed web app</b> designed to bring gamers together and foster a vibrant community of game enthusiasts. With a focus on sharing game reviews, ratings, and connecting with like-minded individuals, Gadget Box offers an engaging platform for gamers to express their opinions, discover new games, and connect with fellow players. <br><br>My web app utilizes the powerful rawg.io <b>API</b>, ensuring that users have access to an extensive collection of games, including the latest releases, popular titles, and hidden gems. With the integrated search bar, you can easily find your favorite games or explore new ones that pique your interest. <br><br> The heart of Gadget Box lies in the user-generated reviews and ratings. By sharing your experiences and thoughts, you can help fellow gamers discover new adventures or steer clear of potential disappointments. <br><br>In addition to the review and rating system, Gadget Box offers a comprehensive social platform. Each user has their own <b>profile page</b>, allowing you to personalize your gaming identity, showcase your favorite games, and connect with other users who share similar gaming interests. You can follow other gamers, explore their profiles, and stay updated with their latest gaming experiences. <br><br> Our website is built with a <b>responsive and mobile-first design</b>, ensuring that you can access Gadget Box seamlessly across various devices. Whether you're on your desktop computer, tablet, or smartphone, you can enjoy a consistent and optimized user experience. <br><br> To enhance the security and user experience, Gadget Box employs <b>NextAuth</b> for authentication, utilizing session storage to ensure a seamless and reliable login process.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://gadget-box.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/gadget-box" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="https://i.hizliresim.com/ajslk4n.png" alt="Quickplate Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>Quickplate</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">Welcome to Quickplate, a vibrant <b>social platform</b> dedicated to sharing quick and easy-to-make recipes. Quickplate provides a space for food e...</p>
+                            <p class="full-text">Welcome to Quickplate, a vibrant <b>social platform</b> dedicated to sharing quick and easy-to-make recipes. Quickplate provides a space for food enthusiasts to discover, create, and share delicious recipes that can be made in no time. The platform emphasizes simplicity, convenience, and the joy of cooking, offering a community-driven hub for culinary inspiration.<br><br>With an intuitive and <b>user-friendly</b> interface, you can easily register and log in to Quickplate, unlocking a world of culinary inspiration. Once you're part of the Quickplate family, you can create your own recipes, upload mouthwatering images, and share your cooking triumphs with others.<br><br>To ensure seamless user experience and efficient image storage, Quickplate integrates with <b>AWS S3 server</b>, allowing you to upload and display enticing visuals alongside your recipes.<br><br>It's also a community of food enthusiasts. <b>Users can engage with recipes through comments</b>, providing feedback, suggestions, and personal anecdotes. You can <b>bookmark</b> your favorite recipes, creating a personalized collection of go-to dishes for future reference. In addition, users can upvote recipes they love, showcasing popular and highly-rated dishes within the community.<br><br>Each recipe and user has its own dedicated page, providing a personalized showcase for your culinary adventures. Quickplate also offers a display of your own recipes and bookmarked favorites, making it easy to revisit and recreate your culinary successes.<br><br>Quickplate boasts a responsive and <b>mobile-first design</b>, ensuring a seamless browsing experience across devices. Our authentication system leverages local storage, providing a secure and hassle-free login experience.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://quickplate.onrender.com/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/recipe-project" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="https://i.hizliresim.com/p3it3bd.png" alt="My Unsplash Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>My Unsplash</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">Welcome to My Unsplash, a user-friendly web application inspired by the renowned Unsplash platform. My Unsplash provides individuals with a simple ...</p>
+                            <p class="full-text">Welcome to My Unsplash, a user-friendly web application inspired by the renowned Unsplash platform. My Unsplash provides individuals with a simple and intuitive space to showcase <b>their photography skills</b> and share stunning images with the world.<br><br>My Unsplash offers a seamless user experience with pure CSS, allowing users to easily create an account, log in, and <b>upload their own photos and images. </b> By leveraging <b>AWS S3</b> for storage, My Unsplash ensures secure and efficient handling of media files. Users can also browse and download images uploaded by others, fostering a community of photography enthusiasts.<br><br>The design of My Unsplash follows a <b>masonry</b> layout, allowing for a visually appealing and organized presentation of images. The <b>responsive and mobile-first</b> approach ensures that the website adapts flawlessly across various devices, providing an immersive experience for both desktop and mobile users.<br><br>At its core, My Unsplash prioritizes simplicity and convenience. By providing an easy-to-use interface, users can focus on showcasing their artistic talents and expressing their unique perspectives through stunning visual content.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://myunsplash-slcn.onrender.com/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/unsplash-demo" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="https://i.hizliresim.com/bkaakfi.png" alt="Interactive Credit Card Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>Interactive Credit Card</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">Card design that reflects the entered credit card information interactively on the screen. *Developed specifically for 375px and 1080px for a chall...</p>
+                            <p class="full-text">Card design that reflects the entered credit card information interactively on the screen. *Developed specifically for 375px and 1080px for a challenge.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://interactive-credit-card-delta.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/interactive-credit-card" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="https://i.hizliresim.com/kfn6s18.png" alt="News Website Landing Page Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>News Website Landing Page</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">An example of a homepage that a technology news website could use.</p>
+                            <p class="full-text">An example of a homepage that a technology news website could use.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://news-landing-page-virid.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/news-landing-page" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="https://i.hizliresim.com/6b5q5fn.png" alt="Billing Page Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>Billing Page</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">A billing page that shows your billing history, payments and card details in a modern way. *Develeped specifically for 1080px for a challenge.</p>
+                            <p class="full-text">A billing page that shows your billing history, payments and card details in a modern way. *Develeped specifically for 1080px for a challenge.</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="https://billing-page-nine.vercel.app/" target="_blank">See Live</a>
+                            <a href="https://github.com/KoyuncuSinan/billing-page" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    
+                </ul>               
+            </div>
+        </section>
+
+        <section id="contact" class="sections">
+            <h2>Contact</h2>
+            
+            <form class="form-container"> 
+                <div class="form-parts">
+                    <label for="name">Name</label>
+                    <input id="name" type="text"  placeholder="Your Name" required class="input"/>
+                </div>
+                <div class="form-parts">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder = "youremail@email.com" required class="input" />
+                </div>
+                <div class="form-parts">
+                    <label for="message">Message</label>
+                    <textarea required placeholder="Your message" id="textarea"></textarea>
+                </div>
+                    <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

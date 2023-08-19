@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(18,29,49)
+}
+
+#mobile-navbar{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.mobile-nav-icons{
+    cursor: pointer;
+}
+
+#desktop-nav{
+    display: none;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+}
+
+#desktop-nav div {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+#desktop-nav div a:not(:last-child){
+    margin-right: 1rem;
+}
+
+#desktop-nav div a:hover{
+    color: rgb(224,79,95);
+    cursor: pointer;
+}
+    
+
+.logo{
+    width: 12%;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+#burger-menu{
+    width: 12%;
+}
+#close-icon{
+    display: none;
+    width: 11%;
+}
+
+main{
+    position: relative;
+}
+
+.sidebar{
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 70%;
+    left: -70%;
+    min-height: 100vh;
+    background-color: white;
+    border: 1px gray solid;
+    z-index: 1000;
+    transition: left 0.3s ease, opacity 0.3s ease;
+}
+.sidebar.active{
+    left: 0;
+    opacity:1;
+}
+
+
+.sidebar a{
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 20px;
+}
+#home{
+    margin-top: 2rem;
+}
+
+#hero-section{
+    position: relative;
+    min-height: 100vh;
+    background-image: url("./public/hero-section.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#hero-section div{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+}
+
+#hero-section div h1{
+    width: 90%;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+}
+#hero-section div h2{
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(223, 143, 152);
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+@media(min-width: 600px ){
+    .logo{
+        width: 8%;
+    }
+    
+    #burger-menu{
+        width: 8%;
+    }
+    #close-icon{
+        width: 7%;
+    }
+    #hero-section div h1{
+        font-size: 50px;
+    }
+    #hero-section div h2{
+        font-size: 25px;
+    }
+    .sidebar{
+        width: 60%;
+    }
+}
+
+@media(min-width: 720px){
+
+}
+
+
+@media(min-width: 900px){
+    .sidebar{
+        display: none;
+    }
+    #desktop-nav{
+        display: flex;
+    }
+    #hero-section div h1{
+        width: 75%; 
+    }
+    #hero-section div h2{
+        width: 75%; 
+    }
+}
+
+@media(min-width: 1024px){
+    #desktop-nav div a{
+        font-size: 20px;
+    }
+
+    #hero-section div h1{
+        font-size: 60px; 
+    }
+    #hero-section div h2{
+        font-size: 30px; 
+    }
+}
+@media(min-width: 1280px){
+
+    #hero-section div h1{
+        font-size: 75px; 
+    }
+    #hero-section div h2{
+        font-size: 35px; 
+    }
+}
+@media(min-width: 1440px){
+
+    #hero-section div h1{
+        font-size: 80px; 
+    }
+    #hero-section div h2{
+        font-size: 40px; 
+    }
+}

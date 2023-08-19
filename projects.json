@@ -1,0 +1,61 @@
+{
+   "projects": [
+    {
+        "name": "Portfolio",
+        "description": "This is my portfolio website where you can see all the information about me and the projects I did. I built this website using foremost technologies such as React, Next.js, TailwindCSS and more.",
+        "imageDesktop": "https://i.hizliresim.com/11lzfz2.png",
+        "imageMobile": "https://i.hizliresim.com/ejdcx68.png",
+        "liveSite": "https://sinankoyuncu.dev/",
+        "github":"https://github.com/KoyuncuSinan/porfolio"
+    },
+    {
+        "name": "Gadget Box",
+        "description": "Welcome to Gadget Box, a dynamic and immersive <b>gaming-themed web app</b> designed to bring gamers together and foster a vibrant community of game enthusiasts. With a focus on sharing game reviews, ratings, and connecting with like-minded individuals, Gadget Box offers an engaging platform for gamers to express their opinions, discover new games, and connect with fellow players. <br><br>My web app utilizes the powerful rawg.io <b>API</b>, ensuring that users have access to an extensive collection of games, including the latest releases, popular titles, and hidden gems. With the integrated search bar, you can easily find your favorite games or explore new ones that pique your interest. <br><br> The heart of Gadget Box lies in the user-generated reviews and ratings. By sharing your experiences and thoughts, you can help fellow gamers discover new adventures or steer clear of potential disappointments. <br><br>In addition to the review and rating system, Gadget Box offers a comprehensive social platform. Each user has their own <b>profile page</b>, allowing you to personalize your gaming identity, showcase your favorite games, and connect with other users who share similar gaming interests. You can follow other gamers, explore their profiles, and stay updated with their latest gaming experiences. <br><br> Our website is built with a <b>responsive and mobile-first design</b>, ensuring that you can access Gadget Box seamlessly across various devices. Whether you're on your desktop computer, tablet, or smartphone, you can enjoy a consistent and optimized user experience. <br><br> To enhance the security and user experience, Gadget Box employs <b>NextAuth</b> for authentication, utilizing session storage to ensure a seamless and reliable login process.",
+        "imageDesktop": "https://i.hizliresim.com/dqcskhh.png",
+        "imageMobile": "https://i.hizliresim.com/7m7nqww.png",
+        "liveSite": "https://gadget-box.vercel.app/",
+        "github":"https://github.com/KoyuncuSinan/gadget-box"
+    },
+    {
+        "name":"Quickplate",
+        "description":"Welcome to Quickplate, a vibrant <b>social platform</b> dedicated to sharing quick and easy-to-make recipes. Quickplate provides a space for food enthusiasts to discover, create, and share delicious recipes that can be made in no time. The platform emphasizes simplicity, convenience, and the joy of cooking, offering a community-driven hub for culinary inspiration.<br><br>With an intuitive and <b>user-friendly</b> interface, you can easily register and log in to Quickplate, unlocking a world of culinary inspiration. Once you're part of the Quickplate family, you can create your own recipes, upload mouthwatering images, and share your cooking triumphs with others.<br><br>To ensure seamless user experience and efficient image storage, Quickplate integrates with <b>AWS S3 server</b>, allowing you to upload and display enticing visuals alongside your recipes.<br><br>It's also a community of food enthusiasts. <b>Users can engage with recipes through comments</b>, providing feedback, suggestions, and personal anecdotes. You can <b>bookmark</b> your favorite recipes, creating a personalized collection of go-to dishes for future reference. In addition, users can upvote recipes they love, showcasing popular and highly-rated dishes within the community.<br><br>Each recipe and user has its own dedicated page, providing a personalized showcase for your culinary adventures. Quickplate also offers a display of your own recipes and bookmarked favorites, making it easy to revisit and recreate your culinary successes.<br><br>Quickplate boasts a responsive and <b>mobile-first design</b>, ensuring a seamless browsing experience across devices. Our authentication system leverages local storage, providing a secure and hassle-free login experience.",
+        "imageDesktop": "https://i.hizliresim.com/ajslk4n.png",
+        "imageMobile": "https://i.hizliresim.com/jh5u70i.png",
+        "liveSite": "https://quickplate.onrender.com/",
+        "github":"https://github.com/KoyuncuSinan/recipe-project"
+    },
+    {
+        "name":"My Unsplash",
+        "description":"Welcome to My Unsplash, a user-friendly web application inspired by the renowned Unsplash platform. My Unsplash provides individuals with a simple and intuitive space to showcase <b>their photography skills</b> and share stunning images with the world.<br><br>My Unsplash offers a seamless user experience with pure CSS, allowing users to easily create an account, log in, and <b>upload their own photos and images. </b> By leveraging <b>AWS S3</b> for storage, My Unsplash ensures secure and efficient handling of media files. Users can also browse and download images uploaded by others, fostering a community of photography enthusiasts.<br><br>The design of My Unsplash follows a <b>masonry</b> layout, allowing for a visually appealing and organized presentation of images. The <b>responsive and mobile-first</b> approach ensures that the website adapts flawlessly across various devices, providing an immersive experience for both desktop and mobile users.<br><br>At its core, My Unsplash prioritizes simplicity and convenience. By providing an easy-to-use interface, users can focus on showcasing their artistic talents and expressing their unique perspectives through stunning visual content.",
+        "imageDesktop": "https://i.hizliresim.com/p3it3bd.png",
+        "imageMobile": "https://i.hizliresim.com/6q9s6x5.png",
+        "liveSite": "https://myunsplash-slcn.onrender.com/",
+        "github":"https://github.com/KoyuncuSinan/unsplash-demo"
+    },
+    {
+        "name":"Interactive Credit Card",
+        "description":"Card design that reflects the entered credit card information interactively on the screen. *Developed specifically for 375px and 1080px for a challenge.",
+        "imageDesktop": "https://i.hizliresim.com/bkaakfi.png",
+        "imageMobile": "https://i.hizliresim.com/85vfxfi.png",
+        "liveSite": "https://interactive-credit-card-delta.vercel.app/",
+        "github":"https://github.com/KoyuncuSinan/interactive-credit-card"
+    },
+    {
+        "name":"News Website Landing Page",
+        "description":"An example of a homepage that a technology news website could use.",
+        "imageDesktop": "https://i.hizliresim.com/kfn6s18.png",
+        "imageMobile": "https://i.hizliresim.com/mjyawzg.png",
+        "liveSite": "https://news-landing-page-virid.vercel.app/",
+        "github":"https://github.com/KoyuncuSinan/news-landing-page"
+    },
+    {
+        "name":"Billing Page",
+        "description":"A billing page that shows your billing history, payments and card details in a modern way. *Develeped specifically for 1080px for a challenge.",
+        "imageDesktop": "https://i.hizliresim.com/6b5q5fn.png",
+        "imageMobile": "https://i.hizliresim.com/6b5q5fn.png",
+        "liveSite": "https://billing-page-nine.vercel.app/",
+        "github":"https://github.com/KoyuncuSinan/billing-page"
+    }
+    
+    ]
+}

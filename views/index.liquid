@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content= "Sinan Koyuncu's Algofy Project">
+    <meta name ="author" content="Sinan Koyuncu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/sections.css">
+    <link rel="icon" type="image/x-icon" href="./public/favicon-32x32.png">
+    <script src="/functionality.js" defer></script>
+    <title>SKoyuncu Algofy Task</title>
+</head>
+<body>
+    <header>
+        <nav id="mobile-navbar">
+            <a id="home-logo"><img src="./public/logo1.png" class="logo" alt="Website logo"></a>
+            <img src="./public/burger-menu.svg" id="burger-menu" alt="Navbar menu icon" class="mobile-nav-icons">
+            <img src="./public/close.svg" id="close-icon" alt="Navbar close icon" class="mobile-nav-icons">
+        </nav>
+        <div class="sidebar">
+            <a href="/" id="home">Home</a>
+            <a id="about-tag">About</a>
+            <a id="projects">Projects</a>
+            <a id="contact-tag">Contact</a>
+        </div>
+        <nav id="desktop-nav">
+            <a id="home-logo-desktop"><img src="./public/logo1.png" class="logo" alt="Website logo"></a>
+            <div>
+                <a id="home-desktop">Home</a>
+                <a id="about-desktop-tag">About</a>
+                <a id= "projects-desktop">Projects</a>
+                <a id="contact-desktop-tag">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="hero-section">
+            <div>
+                <h1>Unleashing Web Magic</h1>
+                <h2>I create enchanting online experiences and elevate your online presence.</h2>
+            </div>
+        </section>
+        <section id="about" class="sections">
+            <h2>About me</h2>
+            <div class="about-container">
+                <img src="./public/profile-laci.png" id="profile-image" alt="Profile picture">
+                <p id="paragraph">Welcome to my website! My name is Sinan Koyuncu, and I am a passionate <b>full stack web developer.</b> With a solid foundation as a web content editor for five years, 
+                    I have seamlessly transitioned into the world of programming, 
+                    honing my skills and expertise through self-learning and 
+                    <b>hands-on experience.</b>
+                    <span id="about-span"> Throughout my journey as a web developer, I developed a deep understanding of the 
+                    importance of <b>user experience and captivating content</b>. I learned how to create engaging web pages, <b>optimize 
+                    content for search engines</b>, and ensure a seamless browsing experience for users. <br><br>I have strong foundation in HTML, CSS, and 
+                    JavaScript. My proficiency extends to building dynamic user interfaces with <b>React and Next.js</b>, while also harnessing the power 
+                    of Node.js and Express.js for robust backend development. With an eye for design, I craft responsive and visually a
+                    ppealing layouts using tools like TailwindCSS and Material UI. My database expertise covers MongoDB and MySQL, 
+                    leveraging MongoDB Atlas for scalable solutions. I'm well-versed in deploying applications on <b>AWS S3</b> and optimizing 
+                    media with Cloudinary. Proficient in version control through <b>GIT and GitHub</b>, I ensure seamless collaboration. 
+
+                    <br><br>One of my key strengths lies in my ability to bridge the gap between design and development. 
+                    Having previously worked as a web content editor, I possess a unique perspective that enables me 
+                    to understand and <b>effectively collaborate with designers, content creators, and other stakeholders</b>. 
+                    I thrive in collaborative environments, and I am always eager to contribute my technical expertise while 
+                    actively seeking opportunities for growth and learning.</span> <span id="about-more">SHOW MORE</span>
+                </p>
+            </div>
+        </section>
+        <section class="sections" id="projects-section-mobile">
+            <h2 id="">Projects</h2>
+            <div class="slider-container">
+                <ul id="projects-container" class="slider">
+                    {% for project in projects.projects %}
+                    <li class="projects-single">
+                        
+                        <h3>{{ project.name }}</h3>
+                        <div id="projects-image-container">
+                            <img src="{{ project.imageDesktop }}" alt="{{ project.name }} Image" class="projects-images">
+                        </div>
+                        
+                        <div class="description-container">
+                            <p class="truncate-text">{{ project.description | truncate: 150 }}</p>
+                            <p class="full-text">{{ project.description }}</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="{{ project.liveSite }}" target="_blank">See Live</a>
+                            <a href="{{ project.github }}" target="_blank">Github</a>
+                        </div>
+                        <div class="nav-slider">
+                            <img src="/public/previous.svg" class="slider-nav prev" onclick="prevSlide()">
+                            <img src="/public/next.svg" class="slider-nav next" onclick="nextSlide()">
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>               
+            </div>
+        </section>
+
+        <section class="sections" id="projects-section-desktop">
+            <h2>Projects</h2>
+            <div class="desktop-container">
+                <ul id="projects-container-desktop" class="projects-container">
+                    {% for project in projects.projects %}
+                    <li class="projects-desktop">
+                    <div class = "grid-container1">
+                        <div id="projects-image-container-desktop">
+                            <img src="{{ project.imageDesktop }}" alt="{{ project.name }} Image" class="projects-images-desktop">
+                        </div>
+                    </div>
+                    <div class = "grid-container2"> 
+                         <h3>{{ project.name }}</h3>
+                        <div class="description-container">
+                            <p class="truncate-text">{{ project.description | truncate: 150 }}</p>
+                            <p class="full-text">{{ project.description }}</p>
+                            <div class="truncate-more" onclick="toggleDescription(this)">READ MORE</div>
+                        </div>
+                        <div id="buttons-container">
+                            <a href="{{ project.liveSite }}" target="_blank">See Live</a>
+                            <a href="{{ project.github }}" target="_blank">Github</a>
+                        </div> 
+                    </div>                   
+                    </li>
+                    {% endfor %}
+                </ul>               
+            </div>
+        </section>
+
+        <section id="contact" class="sections">
+            <h2>Contact</h2>
+            {% comment %} Due to not having backend for this project, I didn't add action and method attributes. {% endcomment %}
+            <form class="form-container"> 
+                <div class="form-parts">
+                    <label for="name">Name</label>
+                    <input id="name" type="text"  placeholder="Your Name" required class="input"/>
+                </div>
+                <div class="form-parts">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder = "youremail@email.com" required class="input" />
+                </div>
+                <div class="form-parts">
+                    <label for="message">Message</label>
+                    <textarea required placeholder="Your message" id="textarea"></textarea>
+                </div>
+                    <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
