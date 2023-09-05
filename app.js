@@ -10,9 +10,8 @@ const engine = new Liquid({
     extname: ".liquid"
 });
 
-engine.renderFile("index.liquid",{projects: projectsData})
-.then((renderedOutput) => {
-    fs.writeFileSync("index.html",renderedOutput, "utf-8"); 
+engine.renderFile("index.liquid",{projects: projectsData}).then((renderedOutput) => {
+    console.log("Template rendered");
 }).catch((error) => {
-    console.error("Error rendering template", error)
+    console.error("Error rendering template", error);
 });

@@ -10,6 +10,7 @@
     "start": "npm-run-all -p watch start-app",
     "watch": "chokidar \"views/**/*.liquid\" -c \"npm run render\"",
     "render": "node app.js",
-    "start-app": "nodemon app.js"
+    "start-app": "nodemon app.js",
+    "build": "node app.js"
   }
 }
